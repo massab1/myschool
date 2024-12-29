@@ -22,8 +22,8 @@
             padding-left: 20px;
         }
         .header img {
-            max-width: 120px; /* Adjust the size of the logo */
-            margin-right: 20px; /* Space between the logo and text */
+            max-width: 120px;
+            margin-right: 20px;
         }
         .navbar {
             background-color: #4CAF50;
@@ -59,6 +59,11 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .ceo-image {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -77,11 +82,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <!-- Home -->
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home</a>
                 </li>
-                <!-- About Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         About
@@ -94,7 +97,6 @@
                         <a class="dropdown-item" href="#">CEO Message</a>
                     </div>
                 </li>
-                <!-- Admissions Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Admissions
@@ -107,7 +109,6 @@
                         <a class="dropdown-item" href="#">Admission Test</a>
                     </div>
                 </li>
-                <!-- Academics Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Academics
@@ -122,11 +123,9 @@
                         <a class="dropdown-item" href="#">Career Counseling</a>
                     </div>
                 </li>
-                <!-- Events -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Events</a>
                 </li>
-                <!-- Media Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Media
@@ -138,11 +137,9 @@
                         <a class="dropdown-item" href="#">Social Media</a>
                     </div>
                 </li>
-                <!-- Career -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Career</a>
                 </li>
-                <!-- Contact -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
@@ -151,35 +148,29 @@
     </nav>
 
     <!-- CEO Message Section -->
-<div class="container my-5">
-    <div class="row">
-        <!-- CEO Image Column -->
-        <div class="col-md-4 text-center">
-            <img src="ceo myschool.png" alt="CEO Massab Farooq" class="img-fluid rounded-circle" style="max-width: 200px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="container my-5">
+        <div class="row">
+            <!-- CEO Image Column -->
+            <div class="col-md-4 text-center">
+                <img src="ceo myschool.png" alt="CEO Massab Farooq" class="img-fluid ceo-image">
+            </div>
+
+            <!-- CEO Message Text Columns -->
+            <div class="col-md-8">
+                <h2>A Message from Our CEO, Massab Farooq</h2>
+                <p>Welcome to MySchool Jhang, where we believe that every child deserves the opportunity to unlock their full potential. As the CEO of this institution, I am proud of our commitment to providing an innovative and well-rounded education, from Playgroup to Class 8. At MySchool Jhang, we focus not only on academic excellence but also on developing key life skills such as creativity, problem-solving, and global awareness.</p>
+                <p>We are constantly evolving our curriculum to integrate modern programs like CS50 coding, Vedic Math, Mental Math, and much more. Our approach is designed to empower students, prepare them for future challenges, and set them on the path to success in an ever-changing world.</p>
+            </div>
         </div>
 
-        <!-- CEO Message Text Columns -->
-        <div class="col-md-8">
-            <h2>A Message from Our CEO, Massab Farooq</h2>
-            
-            <p>Welcome to MySchool Jhang, where we believe that every child deserves the opportunity to unlock their full potential. As the CEO of this institution, I am proud of our commitment to providing an innovative and well-rounded education, from Playgroup to Class 8. At MySchool Jhang, we focus not only on academic excellence but also on developing key life skills such as creativity, problem-solving, and global awareness.</p>
-
-            <p>We are constantly evolving our curriculum to integrate modern programs like CS50 coding, Vedic Math, Mental Math, and much more. Our approach is designed to empower students, prepare them for future challenges, and set them on the path to success in an ever-changing world.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <p>I invite you to explore our school, our values, and the endless opportunities we provide for our students. We look forward to being a part of your child’s educational journey.</p>
-
-            <p>Thank you for choosing MySchool Jhang. Together, we can build a brighter future for our children!</p>
-
-            <p><strong>Massab Farooq</strong><br>CEO, MySchool Jhang</p>
+        <div class="row">
+            <div class="col-md-12">
+                <p>I invite you to explore our school, our values, and the endless opportunities we provide for our students. We look forward to being a part of your child’s educational journey.</p>
+                <p>Thank you for choosing MySchool Jhang. Together, we can build a brighter future for our children!</p>
+                <p><strong>Massab Farooq</strong><br>CEO, MySchool Jhang</p>
+            </div>
         </div>
     </div>
-</div>
-
-
 
     <!-- Footer Section -->
     <footer class="footer">
