@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MySchool Jhang offers advanced education from Playgroup to Class 8 with innovative programs including CS50 coding, Vedic Math, Finger Abacus, and Mental Math.">
-    <title>CEO Message - MySchool Jhang</title>
+    <title>MySchool Jhang</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -31,6 +31,15 @@
         .ceo-message h2 {
             color: #4CAF50;
         }
+        .navbar {
+            background-color: #4CAF50;
+        }
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #45a049;
+        }
         .btn-custom {
             background-color: #4CAF50;
             color: white;
@@ -50,7 +59,50 @@
         <p>Empowering students with modern education from Playgroup to Class 8.</p>
     </header>
 
-    <div class="content">
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand text-white" href="#">MySchool Jhang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                    <ul class="navbar-nav ml-3">
+                        <li><a class="nav-link" href="#ceoMessage">CEO Message</a></li>
+                        <li><a class="nav-link" href="#">Vision</a></li>
+                        <li><a class="nav-link" href="#">Mission</a></li>
+                        <li><a class="nav-link" href="#">Values</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Academics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CEO Message Section -->
+    <div class="content" id="ceoMessage">
         <div class="ceo-message">
             <h2>A Message from Our CEO, Massab Farooq</h2>
             <p>Welcome to MySchool Jhang, where we believe that every child deserves the opportunity to unlock their full potential. As the CEO of this institution, I am proud of our commitment to providing an innovative and well-rounded education, from Playgroup to Class 8. At MySchool Jhang, we focus not only on academic excellence but also on developing key life skills such as creativity, problem-solving, and global awareness.</p>
