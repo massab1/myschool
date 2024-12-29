@@ -25,40 +25,6 @@
             max-width: 120px; /* Adjust the size of the logo */
             margin-right: 20px; /* Space between the logo and text */
         }
-        .header h1 {
-            margin: 0; /* Remove margin for the heading */
-            animation: slideIn 2s ease-in-out;
-        }
-        /* Animation for the header text */
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        .content {
-            margin: 20px;
-            text-align: center;
-        }
-        .ceo-message {
-            background-color: #ffffff;
-            padding: 30px;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .ceo-message h2 {
-            color: #4CAF50;
-            font-size: 30px;
-        }
-        .ceo-message p {
-            color: #333;
-            line-height: 1.6;
-        }
         .navbar {
             background-color: #4CAF50;
         }
@@ -71,15 +37,14 @@
         .navbar-nav .nav-item .nav-link.active {
             color: #ffcc00;
         }
-        .btn-custom {
+        .navbar-nav .nav-item .dropdown-menu {
             background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
         }
-        .btn-custom:hover {
-            background-color: #45a049;
+        .navbar-nav .nav-item .dropdown-item {
+            color: white;
+        }
+        .navbar-nav .nav-item .dropdown-item:hover {
+            color: #45a049;
         }
         .footer {
             background-color: #4CAF50;
@@ -87,11 +52,18 @@
             padding: 10px;
             text-align: center;
         }
+        .ceo-message {
+            background-color: #ffffff;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header with Logo (Logo moved to left corner) -->
+    <!-- Header with Logo -->
     <header class="header">
         <img src="mySchool Logo.jpg" alt="MySchool Jhang Logo"> <!-- Update the image source here -->
         <h1>Welcome to MySchool Jhang</h1>
@@ -105,33 +77,72 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                <!-- Home -->
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                    <ul class="navbar-nav ml-3">
-                        <li><a class="nav-link" href="#ceoMessage">CEO Message</a></li>
-                        <li><a class="nav-link" href="#">Vision</a></li>
-                        <li><a class="nav-link" href="#">Mission</a></li>
-                        <li><a class="nav-link" href="#">Values</a></li>
-                    </ul>
+                <!-- About Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                        <a class="dropdown-item" href="#">Introduction</a>
+                        <a class="dropdown-item" href="#">Vision</a>
+                        <a class="dropdown-item" href="#">Mission</a>
+                        <a class="dropdown-item" href="#">Values</a>
+                        <a class="dropdown-item" href="#">CEO Message</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Admissions</a>
+                <!-- Admissions Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Admissions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                        <a class="dropdown-item" href="#">Age Range</a>
+                        <a class="dropdown-item" href="#">Admission Criteria</a>
+                        <a class="dropdown-item" href="#">Fee Structure</a>
+                        <a class="dropdown-item" href="#">Uniform</a>
+                        <a class="dropdown-item" href="#">Admission Test</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Academics</a>
+                <!-- Academics Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Academics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                        <a class="dropdown-item" href="#">Pre School</a>
+                        <a class="dropdown-item" href="#">Primary School</a>
+                        <a class="dropdown-item" href="#">Secondary School</a>
+                        <a class="dropdown-item" href="#">Curriculum</a>
+                        <a class="dropdown-item" href="#">Examination</a>
+                        <a class="dropdown-item" href="#">Academic Calendar</a>
+                        <a class="dropdown-item" href="#">Career Counseling</a>
+                    </div>
                 </li>
+                <!-- Events -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Events</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Media</a>
+                <!-- Media Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Media
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
+                        <a class="dropdown-item" href="#">Press Releases</a>
+                        <a class="dropdown-item" href="#">Electronic Media</a>
+                        <a class="dropdown-item" href="#">Print Media</a>
+                        <a class="dropdown-item" href="#">Social Media</a>
+                    </div>
                 </li>
+                <!-- Career -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Career</a>
                 </li>
+                <!-- Contact -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
@@ -140,7 +151,7 @@
     </nav>
 
     <!-- CEO Message Section -->
-    <div class="content" id="ceoMessage">
+    <div class="content">
         <div class="ceo-message">
             <h2>A Message from Our CEO, Massab Farooq</h2>
             <p>Welcome to MySchool Jhang, where we believe that every child deserves the opportunity to unlock their full potential. As the CEO of this institution, I am proud of our commitment to providing an innovative and well-rounded education, from Playgroup to Class 8. At MySchool Jhang, we focus not only on academic excellence but also on developing key life skills such as creativity, problem-solving, and global awareness.</p>
