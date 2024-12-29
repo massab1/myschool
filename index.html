@@ -52,18 +52,26 @@
             padding: 10px;
             text-align: center;
         }
-        .ceo-message {
-            background-color: #ffffff;
-            padding: 30px;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
         
-        .ceo-image {
-            max-width: 200px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+        .ceo-message {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /* Text color for better contrast */
+    font-size: 1rem; /* Ensure text size is consistent */
+}
+
+.ceo-image {
+    max-width: 200px; /* Limits the image width */
+    height: auto; /* Keeps the aspect ratio of the image */
+    border-radius: 0; /* Ensures the image remains rectangular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow around the image */
+    display: block; /* Ensures the image is aligned and centered properly */
+    margin: 0 auto; /* Centers the image */
+}
+
 
     </style>
 </head>
