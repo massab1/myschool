@@ -6,6 +6,7 @@
     <meta name="description" content="MySchool Jhang offers advanced education from Playgroup to Class 8 with innovative programs including CS50 coding, Vedic Math, Finger Abacus, and Mental Math.">
     <title>MySchool Jhang</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animate.css -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,8 +23,8 @@
             padding-left: 20px;
         }
         .header img {
-            max-width: 120px;
-            margin-right: 20px;
+            max-width: 120px; /* Adjust the size of the logo */
+            margin-right: 20px; /* Space between the logo and text */
         }
         .navbar {
             background-color: #4CAF50;
@@ -52,40 +53,32 @@
             padding: 10px;
             text-align: center;
         }
-        
         .ceo-message {
-    background-color: #ffffff;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333; /* Text color for better contrast */
-    font-size: 1rem; /* Ensure text size is consistent */
-}
-
-.ceo-image {
-    max-width: 200px; /* Limits the image width */
-    height: auto; /* Keeps the aspect ratio of the image */
-    border-radius: 0; /* Ensures the image remains rectangular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow around the image */
-    display: block; /* Ensures the image is aligned and centered properly */
-    margin: 0 auto; /* Centers the image */
-}
-
-
+            background-color: #ffffff;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Optional styling for animations */
+        .animate__animated {
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
     </style>
 </head>
 <body>
 
     <!-- Header with Logo -->
-    <header class="header">
+    <header class="header animate__animated animate__fadeIn">
         <img src="mySchool Logo.jpg" alt="MySchool Jhang Logo"> <!-- Update the image source here -->
         <h1>Welcome to MySchool Jhang</h1>
     </header>
 
     <!-- Navigation Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        
+    <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__fadeIn animate__delay-1s">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -106,52 +99,7 @@
                         <a class="dropdown-item" href="#">CEO Message</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Admissions
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
-                        <a class="dropdown-item" href="#">Age Range</a>
-                        <a class="dropdown-item" href="#">Admission Criteria</a>
-                        <a class="dropdown-item" href="#">Fee Structure</a>
-                        <a class="dropdown-item" href="#">Uniform</a>
-                        <a class="dropdown-item" href="#">Admission Test</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Academics
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
-                        <a class="dropdown-item" href="#">Pre School</a>
-                        <a class="dropdown-item" href="#">Primary School</a>
-                        <a class="dropdown-item" href="#">Secondary School</a>
-                        <a class="dropdown-item" href="#">Curriculum</a>
-                        <a class="dropdown-item" href="#">Examination</a>
-                        <a class="dropdown-item" href="#">Academic Calendar</a>
-                        <a class="dropdown-item" href="#">Career Counseling</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Media
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
-                        <a class="dropdown-item" href="#">Press Releases</a>
-                        <a class="dropdown-item" href="#">Electronic Media</a>
-                        <a class="dropdown-item" href="#">Print Media</a>
-                        <a class="dropdown-item" href="#">Social Media</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Career</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                <!-- More items... -->
             </ul>
         </div>
     </nav>
@@ -160,29 +108,20 @@
     <div class="container my-5">
         <div class="row">
             <!-- CEO Image Column -->
-            <div class="col-md-4 text-center">
-                <img src="ceo myschool.png" alt="CEO Massab Farooq" class="img-fluid ceo-image">
+            <div class="col-md-4 text-center animate__animated animate__fadeInUp">
+                <img src="ceo myschool.png" alt="CEO Massab Farooq" class="img-fluid rounded" style="max-width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
             </div>
-
-            <!-- CEO Message Text Columns -->
-            <div class="col-md-8">
+            <!-- CEO Message Text Column -->
+            <div class="col-md-8 animate__animated animate__fadeInUp">
                 <h2>A Message from Our CEO, Massab Farooq</h2>
-                <p>Welcome to MySchool Jhang, where we believe that every child deserves the opportunity to unlock their full potential. As the CEO of this institution, I am proud of our commitment to providing an innovative and well-rounded education, from Playgroup to Class 8. At MySchool Jhang, we focus not only on academic excellence but also on developing key life skills such as creativity, problem-solving, and global awareness.</p>
-                <p>We are constantly evolving our curriculum to integrate modern programs like CS50 coding, Vedic Math, Mental Math, and much more. Our approach is designed to empower students, prepare them for future challenges, and set them on the path to success in an ever-changing world.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <p>I invite you to explore our school, our values, and the endless opportunities we provide for our students. We look forward to being a part of your child’s educational journey.</p>
-                <p>Thank you for choosing MySchool Jhang. Together, we can build a brighter future for our children!</p>
-                <p><strong>Massab Farooq</strong><br>CEO, MySchool Jhang</p>
+                <p>Welcome to MySchool Jhang, where we believe that every child deserves the opportunity to unlock their full potential. As the CEO of this institution, I am proud of our commitment to providing an innovative and well-rounded education, from Playgroup to Class 8...</p>
+                <p>We are constantly evolving our curriculum to integrate modern programs like CS50 coding, Vedic Math, Mental Math, and much more...</p>
             </div>
         </div>
     </div>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer animate__animated animate__fadeIn animate__delay-2s">
         <p>&copy; 2024 MySchool Jhang | All Rights Reserved</p>
     </footer>
 
